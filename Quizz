@@ -1,0 +1,154 @@
+//Feito por Hariél Baumgardt e Gabriel Schulz
+import java.util.Scanner;
+public class Quizz {
+
+	public static void main(String[] args) {
+	
+	Scanner sc = new Scanner (System.in);
+		
+	int p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,idade;
+	String nome;
+	//Criamos variáveis para cada pergunta,para as respostas e algumas informações básicas
+	
+	System.out.println("Nos diga seu Nome: ");
+	nome = sc.next();
+	//Aqui pedimos para o usuário nos informar o seu nome
+	
+	System.out.println("Nos diga sua Idade: ");
+	idade = sc.nextInt();
+	//Aqui pedimos para o usuário nos informar sua idade
+	
+	System.out.println("Agora iremos realizar algumas perguntas sobre sua alimentação,para saber se você está saudavel !!");
+	System.out.println("Primeira Pergunta: O que você costuma comer no café da manhã ?\n " + "\n 1-Café com Pão " + "\n 2-Suco com Omelete" + "\n 3-Frituras" + "\n 4-Bolo com Refrigerante");
+	p1 = sc.nextInt();
+	//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p1=sc.nextInt para o usuário conseguir interagir.
+	
+	if(p1 == 2) {
+		System.out.println("Parabéns,você inicia sua primeira refeição corretamente !!");
+
+	} else {
+		System.out.println("Opaa,pelo visto você não inicia sua alimentação corretamente !!");
+
+	}
+	//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+	
+	System.out.println("Segunda Pergunta: Você costuma fazer refeições entre o café da manhã e o almoço ?\n" + "\n 1-Sim" + "\n 2-Não");
+	p2 = sc.nextInt();	
+	//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p2=sc.nextInt para o usuário conseguir interagir.
+	
+	if(p2 == 1) {
+		System.out.println("Como você já faz essa refeição,é importante que você consuma alimentos como frutas ou outras coisas mais leves!");
+		
+	}else {
+		System.out.println("Como você não realiza essa refeição,recomendamos começar a faze-la,consuma frutas ou alimentos mais leves,somente para lhe dar sustância");
+
+	}
+	//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+	
+	System.out.println("O que você costuma consumir no almoço ?\n" + "\n 1-Uma refeição completa,carne,arroz,saladas" + "\n 2-Somente frituras,batatafrita,pastel,coxinha" + "\n 3-Somente doces,bolos,bolachas,balas" + "\n 4-Não realizo essa refeição");
+	p3 = sc.nextInt();
+	//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p3=sc.nextInt para o usuário conseguir interagir.
+	
+if(p3 == 1) {
+	System.out.println("Parabéns !! você realiza está refeição corretamente !!");
+}
+else {
+	System.out.println("Bom,isso é um pouco preocupante você não esta realizando está refeição,ou está realizando ela incorretamente!!");
+	//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+	
+}
+		
+    System.out.println("Você costuma beber algo durante o almoço ?\n" + "\n 1-Suco ou Água " + "\n 2-Refrigerante " + "\n 3-Cerveja" + "\n 4-Nada");
+    p4 = sc.nextInt();
+  //Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p4=sc.nextInt para o usuário conseguir interagir.
+	if(p4 == 1) {
+		System.out.println("Parabéns você está ingerindo bebidas que ajudam na digestão !!");
+	}
+	else {
+		System.out.println("Infelizmente você está ingerindo bebidas que não lhe ajudam na digestão !!");
+	}
+	//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+	
+	System.out.println("Você realiza alguma refeição entre o almoço e o café da tarde ?" + "\n 1-Sim" + "\n 2-Não");
+	p5 = sc.nextInt();
+	//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p5=sc.nextInt para o usuário conseguir interagir.
+
+if(p5 == 1) {
+	System.out.println("Ótimo assim você continua mantendo as proteínas em seu corpo !!");
+}
+else {
+	System.out.println("Aconselho você a começar a consumir algo,para manter suas proteínas !!");
+}
+//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+
+System.out.println("O que você costuma consumir no café da tarde ? \n" + "\n 1-Pão com café" + "\n 2-Bolo com suco" + "\n 3-Bolacha com Refrigerante" + "\n 4-Não faço está refeição");
+p6 = sc.nextInt();
+//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p6=sc.nextInt para o usuário conseguir interagir.
+
+if(p6 == 2) {
+	System.out.println("Muito bem,ingerir algo doce também é importante para mantér seu corpo em equilibrio !!");
+}
+else {
+	System.out.println("Infelizmente você não está ingerindo está refeição corretamente ou não está realizando ela!!");	
+}
+//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+ 
+System.out.println("No jantar,você costuma ingerir o que ? " + "\n 1-Refeição Completa" + "\n 2-Bolachas" + "\n 3-Bolos" + "\n 4-Pão");
+p7 = sc.nextInt();
+//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p7=sc.nextInt para o usuário conseguir interagir.
+
+if(p7 == 4) {
+	System.out.println("Parabéns,a noite é importante ingerir alimentos leves,para um sono melhor!!");
+}
+else {
+	System.out.println("Infelizmente você não está se alimentando corretamente,possuindo provavelmente uma alimentação pesada!");
+}
+//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+
+System.out.println("O que você costuma beber na janta? " + "\n 1-Refrigerante " + "\n 2-Suco" + "\n 3-Cerveja " + "\n 4-Água");
+p8 = sc.nextInt();
+//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p8=sc.nextInt para o usuário conseguir interagir.
+
+if(p8 == 2) {
+	System.out.println("Parabéns,é importante beber algo saúdavel porém leve!");
+}
+else {
+	System.out.println("Infelizmente você não está ingerindo bebidas saudáveis!");
+}
+//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+
+System.out.println("Agora iremos fazer duas perguntas básicas sobre você !");
+//Utilizado o system.out.println para passar uma informação ao usuário
+
+System.out.println("Você costuma pratica alguma atividade física?? " + "\n 1-Sim" + "\n 2-Não");
+p9 = sc.nextInt();
+//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p9=sc.nextInt para o usuário conseguir interagir.
+
+if(p9 == 1) {
+	System.out.println("Ótimo é importante que vocÊ continue praticando!!");
+}
+else {
+	System.out.println("É bom que você começe a praticar alguma atividade física!!");
+}
+//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+
+System.out.println("Você costuma dormir mais ou menos de 8 horas por dia??" + "\n 1-Sim" + "\n 2-Não");
+p10 = sc.nextInt();
+//Aqui foi utilizado o comando System.out.println para realizar a pergunta ao usuário e o p10=sc.nextInt para o usuário conseguir interagir.
+
+if(p10 == 1) {
+	System.out.println("Muito bem continue assim,um some regulado é muito importante !!");
+}
+else {
+	System.out.println("Recomendados que você regule seu sono,pois é muito importante !!");
+}
+//Aqui utilizamos o if else para mostrar ao usuário qual a resposta correta,ou caso ele acertou avisa-lo que está correto
+
+
+		sc.close();
+		
+		
+	}
+	
+
+}
